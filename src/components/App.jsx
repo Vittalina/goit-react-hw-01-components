@@ -7,8 +7,11 @@ import friends from 'data/friends';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 import transactions from 'data/transactions';
 
+import { Container } from 'components/App.styled';
+
 export const App = () => {
   return (
+    <Container>
     <div>
       <Profile
   username={user.username}
@@ -20,6 +23,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />;
-    </div>
+      </div>
+      </Container>
     );
 };
