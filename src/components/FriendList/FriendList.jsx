@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
 
-// import css from '../Friends.module.css';
-
 export const FriendList = ({friends}) => {
     return <ul className="friend-list">
         {friends.map(({ avatar, name, isOnline, id }) => (

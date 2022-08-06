@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import { UserStatistics, Title, StatList, Item, Label, Percentage } from 'components/Statistics/Statistics.styled';
 
-// import css from '../Statistics.module.css';
-
 export const Statistics = ({ stats, title }) => {
     return (<UserStatistics>
         <Title>{title}</Title>
