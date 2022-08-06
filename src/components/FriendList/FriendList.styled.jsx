@@ -26,6 +26,7 @@ export const Avatar = styled.img`
 background-color: #233C8E;
 border-radius: 50%;
 margin-right: 15px;
+margin-left: 10px;
 `;
 
 export const FriendName = styled.p`
