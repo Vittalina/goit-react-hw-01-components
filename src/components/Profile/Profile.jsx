@@ -1,9 +1,20 @@
 import PropTypes from 'prop-types';
-import {UserProfile, Avatar, UserName, Tag, Location, Stats, StatsItem, Label, Quantity } from 'components/Profile/Profile.styled';
+import {Avatar, UserName, Tag, Location, StatsItem, Label, Quantity } from 'components/Profile/Profile.styled';
+import { Box } from 'components/Box';
 
 export const Profile = ({ username, tag, location, avatar, stats}) => {
     console.log({ username, tag, location, avatar, stats});
-    return <UserProfile>
+    return <Box
+        width='300px'
+        ml='auto'
+        mr='auto'
+        p='10px 0 0 0'
+        bg='#f5f4fa'
+        textAlign='center'
+        borderRadius='8px'
+        boxShadow='0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2)'
+    >
     <div className="description">
     <Avatar
         src={avatar}
@@ -14,7 +25,13 @@ export const Profile = ({ username, tag, location, avatar, stats}) => {
         <Location>{location}</Location>
     </div>
 
-    <Stats>
+        <Box
+            display='flex'
+            justifyContent='space-around'
+            p='0 10px'
+            borderTop='1px solid #5F7661'
+            as='ul'
+        >
     <StatsItem>
         <Label>Followers </Label>
         <Quantity>{stats.followers}</Quantity>
@@ -27,8 +44,8 @@ export const Profile = ({ username, tag, location, avatar, stats}) => {
         <Label>Likes </Label>
         <Quantity>{stats.likes}</Quantity>
     </StatsItem>
-    </Stats>
-</UserProfile> 
+    </Box>
+</Box> 
 }
 
 Profile.propTypes = {

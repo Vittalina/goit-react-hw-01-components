@@ -1,18 +1,36 @@
 import PropTypes from 'prop-types';
-import { UserStatistics, Title, StatList, Item, Label, Percentage } from 'components/Statistics/Statistics.styled';
+import { Title, Item, Label, Percentage } from 'components/Statistics/Statistics.styled';
+import { Box } from 'components/Box';
+
 
 export const Statistics = ({ stats, title }) => {
-    return (<UserStatistics>
+    return (<Box
+        width='300px'
+        mt='30px'
+        ml='auto'
+        mr='auto'
+        pt='10px'
+        bg='#f5f4fa'
+        textAlign='center'
+        borderRadius='8px'
+        boxShadow='0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2)'
+        as='section'
+    >
         <Title>{title}</Title>
 
-        <StatList>
+        <Box
+            display='flex'
+            borderTop='1px solid #5F7661'
+            as='ul'
+        >
             {stats.map(({ id, label, percentage }) => (
                 <Item key={id}>
                     <Label>{label} </Label>
                     <Percentage>{percentage}%</Percentage>
                 </Item>))}
-        </StatList>
-    </UserStatistics>
+        </Box>
+    </Box>
     )
 };
 

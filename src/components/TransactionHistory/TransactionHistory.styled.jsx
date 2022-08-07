@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
 
-export const TransactionsHistory = styled.table`
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    background: #f5f4fa;
-    text-align: center;
-    border-radius: 8px;
-`;
+// export const TransactionsHistory = styled.table`
+//     width: 300px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-top: 30px;
+//     background: #f5f4fa;
+//     text-align: center;
+//     border-radius: 8px;
+// `;
 
 export const TableHead = styled.thead`
 font-family: 'Roboto';

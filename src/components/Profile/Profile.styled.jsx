@@ -1,17 +1,17 @@
 import styled from '@emotion/styled';
 
-export const UserProfile = styled.div`
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 0 0 0;
-    background: #f5f4fa;
-    text-align: center;
-    border-radius: 8px;
-`;
-export const DescriptionWrap = styled.div`
-display: flex;
-`;
+// export const UserProfile = styled.div`
+//     width: 300px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 10px 0 0 0;
+//     background: #f5f4fa;
+//     text-align: center;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 8px;
+// `;
+
 export const Avatar = styled.img`
 height: 120px;
 width: 120px;
@@ -45,14 +45,13 @@ color: #5F7661;
 margin: 0 0 40px 0;
 `;
 
-export const Stats = styled.ul`
-display: flex;
-justify-content: space-around;
-padding: 0 10px;
-list-style: none;
+// export const Stats = styled.ul`
+// display: flex;
+// justify-content: space-around;
+// padding: 0 10px;
 
-border-top: 1px solid #5F7661;
-`;
+// border-top: 1px solid #5F7661;
+// `;
 
 export const StatsItem = styled.li`
 :nth-child(2n) {

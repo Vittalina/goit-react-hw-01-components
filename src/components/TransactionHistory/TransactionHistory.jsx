@@ -1,9 +1,18 @@
 import PropTypes from 'prop-types';
-import {TransactionsHistory, TableHead, TableHeadText, TableData} from 'components/TransactionHistory/TransactionHistory.styled';
+import { TableHead, TableHeadText, TableData} from 'components/TransactionHistory/TransactionHistory.styled';
+import { Box } from 'components/Box';
 
 export const TransactionHistory = ({items}) => {
     return (
-        <TransactionsHistory>
+        <Box
+            width='300px'
+            mt='30px'
+            ml='auto'
+            mr='auto'
+            bg='#f5f4fa'
+            textAlign='center'
+            borderRadius='8px'
+            as='table'>
                 <TableHead>
     <tr>
         <TableHeadText>Type</TableHeadText>
@@ -21,7 +30,7 @@ export const TransactionHistory = ({items}) => {
     </tr>
         ))}
             </tbody>
-    </TransactionsHistory>
+    </Box>
     )
 }
 
