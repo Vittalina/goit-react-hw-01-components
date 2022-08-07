@@ -22,6 +22,12 @@ border-radius: 4px 4px 4px 4px;
     }
 `;
 
+export const Status = styled.span`
+font-family: 'Roboto';
+font-size: 12px;
+
+`;
+
 export const Avatar = styled.img`
 background-color: #233C8E;
 border-radius: 50%;

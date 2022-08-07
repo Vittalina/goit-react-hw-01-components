@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
-import { FriendsList, Item, Avatar, FriendName } from 'components/FriendList/FriendList.styled';
+import { FriendsList, Item, Status, Avatar, FriendName } from 'components/FriendList/FriendList.styled';
+import {checkOnline} from 'components/FriendList/checkOnline'
 
 export const FriendList = ({friends}) => {
     return <FriendsList>
         {friends.map(({ avatar, name, isOnline, id }) => (
             <Item key={id}>
-                <span className="status">{isOnline}</span>
+                <Status>{`${checkOnline(isOnline)}`}</Status>
             <Avatar src={avatar} alt="User avatar" width="48" />
                 <FriendName>{name}</FriendName>
         </Item>))}
